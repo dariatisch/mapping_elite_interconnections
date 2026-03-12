@@ -6,9 +6,29 @@
   <style>
     iframe {
       width: 100%;
-      height: 600px;
+      height: 650px;  /* Adjust based on actual figure height */
+      border: none;
+      overflow: hidden;
+    }
+
+    details {
+      margin-bottom: 30px;
       border: 1px solid #ccc;
-      margin-bottom: 40px;
+      border-radius: 6px;
+      padding: 10px 15px;
+      background: #f9f9f9;
+    }
+
+    summary {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      margin: -10px -15px;
+      padding: 10px 15px;
+    }
+
+    summary:hover {
+      background: #ececec;
     }
   </style>
 </head>
@@ -22,15 +42,23 @@
     This page presents the online supplementary files containing all interactive figures described in the publication.
   </p>
 
-  <h2>Figure 1 — Interactive</h2>
-  <iframe src="family_network_interactive.html"></iframe>
+  <!-- FIGURE 1 -->
+  <details>
+    <summary>Figure 1 — Interactive</summary>
+    <iframe src="family_network_interactive.html" scrolling="no"></iframe>
+  </details>
 
-  <h2>Figure 3 — Interactive</h2>
-  <iframe src="p_fam_poli_interactive.html"></iframe>
+  <!-- FIGURE 3 -->
+  <details>
+    <summary>Figure 3 — Interactive</summary>
+    <iframe src="p_fam_poli_interactive.html" scrolling="no"></iframe>
+  </details>
 
-  <h2>Figure 4 — Interactive</h2>
-  <iframe src="p_rich_pol_interactive.html"></iframe>
+  <!-- FIGURE 4 -->
+  <details>
+    <summary>Figure 4 — Interactive</summary>
+    <iframe src="p_rich_pol_interactive.html" scrolling="no"></iframe>
+  </details>
 
 </body>
 </html>
-
